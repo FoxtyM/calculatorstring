@@ -17,7 +17,6 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Введите данные: ")
 	str, _ := reader.ReadString('\n')
-
 	strSplit = strings.Split(str, "")
 	for i, v := range strSplit {
 		if v == "+" || v == "-" || v == "*" || v == "/" {
