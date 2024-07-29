@@ -57,7 +57,7 @@ func check() (string, string) {
 		}
 	}
 
-	if len(a) < 1 || len(a) > 10 && len(b) < 1 || len(b) > 10 {
+	if len(a) < 1 || len(a) > 10 || len(b) < 1 || len(b) > 10 {
 		panic("Операнды должны быть в диапазоне от 1 до 10 символов, не включая кавычки")
 	}
 
