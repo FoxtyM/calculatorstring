@@ -18,13 +18,9 @@ func main() {
 	fmt.Println("Введите данные: ")
 	str, _ := reader.ReadString('\n')
 
-	//Написать регулярку
 	strSplit = strings.Split(str, "")
 	for i, v := range strSplit {
 		if v == "+" || v == "-" || v == "*" || v == "/" {
-			//if sign != 0 {
-			//	panic("Не надо так")
-			//}
 			if strSplit[i-1] == " " && strSplit[i+1] == " " {
 				sign = i
 			}
@@ -104,6 +100,5 @@ func calculate() string {
 			resfinish = res
 		}
 	}
-
 	return resfinish
 }
